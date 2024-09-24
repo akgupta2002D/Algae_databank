@@ -4,30 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nepal Algae</title>
+    <title>Nepal Algae Research</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+    <!-- ///////// Main Container ///////// -->
     <section class="main_container">
+
+        <!-- ///////// Navigation Section ///////// -->
         <nav>
             <a href="#">Home</a>
             <a href="#">Learn</a>
             <a href="#">Collections</a>
             <a href="#">Mission</a>
 
-            <input type="search">
-            <button class="search">Search</button>
-
+            <!-- Search input and button -->
+            <div class="search_container">
+                <input type="search" placeholder="Search...">
+                <button class="search">Search</button>
+            </div>
         </nav>
 
+        <!-- ///////// Map Section ///////// -->
         <div class="map_container">
-            <img src="images/Nepal_3d.png" alt="">
-            <img src="images/pin_icon.png" alt="">
+            <img src="images/Nepal_3d.png" alt="3D Map of Nepal" id="nepal-map">
+            <div class="pins_container">
+                <!-- Pin Locations will be dynamically added here by JavaScript -->
+            </div>
         </div>
-
     </section>
 
+    <!-- ///////// JavaScript for Dynamic Pins ///////// -->
+    <script src="index.js"></script>
 
 </body>
 
